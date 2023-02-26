@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="header__branding" href="/">
+            <div class="header__title"><h1>FranklinTV</h1></div>
+            <div class="header__logo"><img src="benny.svg" style="" alt="[benny]"></div>
+            <div class="header__title"><h1>WFPR</h1></div>
+        </a>
+        <nav class="header__nav">
+            <ul></ul>
+        </nav>
+        <button class="header__hamburger">☰</button>
+    </header>
+    <!-- HEADER -->
+    <div class="middle">
+        <main class="middle__main">
+            <div class="schedule">
+                <h1 class="schedule__header">Schedules for the week of 04/3/2028</h1>
+                <div class="schedule__middle">
+                    <button class="schedule__btn schedule__btn--tv">TV Schedules</button>
+                    <button class="schedule__btn schedule__btn--radio">Radio Schedule</button>
+                </div>
+            </div>
+            <article class="entry">
+                <header class="entry__header">
+                    <h1 class="entry__title">Our Programs</h1>
+                    <div class="entry__featured">
+                    </div>
+                </header>
+                <div class="entry__content">
+                    <div class="programs">
+                        <div class="programs__tabs">
+                            <button class="program__tab program__tab--active">All</button>
+                            <button class="program__tab">Government</button>
+                            <button class="program__tab">Talk</button>
+                            <button class="program__tab">Sports</button>
+                            <button class="program__tab">Cooking</button>
+                            <button class="program__tab">Music</button>
+                        </div>
+                        <div class="program" style="background-color: rgb(238, 221, 212)" >
+                            <img src="frank_presents.png" class="program__header program__header--frank-presents--unselected"  onclick="
+                                $('.program__content--frank-presents').slideToggle();
+                                $('.program__header--frank-presents--unselected').slideToggle('fast');
+                                $('.program__header--frank-presents--selected').slideToggle('fast');
+                            ">
+                            <img src="frank_pres--crop.png" class="program__header program__header--frank-presents--selected" style="display: none;" onclick="
+                                $('.program__content--frank-presents').slideToggle();
+                                $('.program__header--frank-presents--unselected').slideToggle('fast');
+                                $('.program__header--frank-presents--selected').slideToggle('fast');
+                            ">
+                            <div class="program__content program__content--frank-presents">
+                                <h1>Frank Presents - Access TV</h1>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo numquam at necessitatibus quis odio magni, vel iusto minus, ea facere mollitia, quisquam illum aut?</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo numquam at necessitatibus quis odio magni, vel iusto minus, ea facere mollitia, quisquam illum aut?</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo numquam at necessitatibus quis odio magni, vel iusto minus, ea facere mollitia, quisquam illum aut?</p>
+
+                            </div>
+                        </div>
+                        <div class="program" style="background-color: rgb(250, 224, 224);">
+                        <img src="more_perfect_union.png" class="program__header program__header--more-perfect-union--unselected" onclick="
+                            $('.program__content--more-perfect-union').slideToggle();
+                            $('.program__header--more-perfect-union--unselected').slideToggle('fast');
+                            $('.program__header--more-perfect-union--selected').slideToggle('fast');
+                        ">
+                        <img src="Preamble.jpg" class="program__header program__header--more-perfect-union--selected" style="display: none;" onclick="
+                            $('.program__content--more-perfect-union').slideToggle();
+                            $('.program__header--more-perfect-union--unselected').slideToggle('fast');
+                            $('.program__header--more-perfect-union--selected').slideToggle('fast');
+                        ">
+                            <div class="program__content program__content--more-perfect-union" >
+                                <h1>More Perfect Union - WFPR</h1>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nemo sequi odio, sint est deleniti debitis consequatur repellat corporis libero, exercitationem unde recusandae et.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <img src="instagram.png" alt="">
+            <img src="twitter.png" alt="">
+            <img src="facebook.png" alt="">
+            <img src="franklin_matters.JPG" alt="" srcset="">
+        </aside>
+    </div>
+    <footer class="footer">
+        <span>©2023 Franklin Community Cable Access Inc.</span>
+        <span>23 Hutchinson St. Franklin, MA 02038</span>
+        <span>508-541-4118 | info@franklin.tv</span>
+    </footer>
+</body>
