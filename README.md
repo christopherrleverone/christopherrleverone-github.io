@@ -1,4 +1,4 @@
-# ftv-site--proposal
+# ftv site proposal
 
 A Static demo for a proposed redesign of franklin.tv and wfpr.fm.
 
